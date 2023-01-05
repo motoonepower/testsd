@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="p-4 text-gray-700 text-lg">
+    <div className="p-4 text-gray-700 text-lg h-full">
       <h1 className="text-5xl text-center pb-4 text-black">LTJSS</h1>
       <h3 className="text-2xl text-gray-800 pb-8 text-center">
         LTJSS - An Immortal Philosophy

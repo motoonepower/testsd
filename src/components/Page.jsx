@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Content } from "./index";
+import { Link } from "react-router-dom";
 import "../App.css";
 
 function Page() {
@@ -18,11 +18,11 @@ function Page() {
                 />
               </div>
               <p className="title">Lokmanya Tilak College of Engineering</p>
-              <p className="sub_title mt-4">Credits to NRSA Devs</p>
             </div>
             <ul className="menu">
-              <NavLink name="Home" route="" />
+              <NavLink name="Home" route="home" />
               <NavLink name="Call for Papers" route="call-for-papers" />
+              <NavLink name="Submissions" route="submissions" />
               <NavLink name="Schedule" route="schedule" />
               <NavLink
                 name="Registration Details "
@@ -46,6 +46,9 @@ function Page() {
                 icon="fab fa-instagram"
               />
             </ul>
+            <p className="mt-4 text-base text-white font-medium text-center mb-10 px-10">
+              Credits to Adnan, Nitesh, Shubham and Rushi
+            </p>
           </div>
         </div>
         <Content />
@@ -58,7 +61,6 @@ function NavLink({ name, route }) {
   function BackDropListener() {
     document.querySelector(".wrapper").classList.remove("active");
     document.querySelector(".vertical_wrap").classList.add("abs");
-    console.log("backdrop");
   }
   return (
     <li onClick={BackDropListener}>
@@ -72,9 +74,9 @@ function NavLink({ name, route }) {
 function SocialLink({ link, icon }) {
   return (
     <li>
-      <Link to={link} target="_blank">
+      <a href={link} target="_blank">
         <i className={icon}></i>
-      </Link>
+      </a>
     </li>
   );
 }

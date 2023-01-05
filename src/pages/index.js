@@ -5,3 +5,4 @@ export { default as Registration_Details } from "./Registration_Details";
 export { default as Schedule } from "./Schedule";
 export { default as Speaker } from "./Speaker";
 export { default as About } from "./About";
+export { default as Submissions } from "./Submissions";
